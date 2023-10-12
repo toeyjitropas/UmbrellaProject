@@ -1,9 +1,9 @@
 {
+  "homepage": "https://toeyjitropas.github.io/UmbrellaProject/",
   "name": "umbrella",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://toeyjitropas.github.io/UmbrellaProject/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
