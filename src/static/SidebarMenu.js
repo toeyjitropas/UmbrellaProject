@@ -70,7 +70,7 @@ const mainMenu = [
             {
                 "name": "New Biz Guideline",
                 "link": "",
-                "icon": "FaN",
+                "icon": "FaNetworkWired",
                 "role": ["admin","uwSenior","uwJunior"]
             }
         ],
@@ -84,7 +84,7 @@ const mainMenu = [
             {
                 "name": "Motor Referral",
                 "link": "",
-                "icon": "FaCarOn",
+                "icon": "FaCarAlt",
                 "role": ["admin","mktSenior","mktJunior"]
             },
             {
