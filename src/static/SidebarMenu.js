@@ -128,7 +128,7 @@ const mainMenu = [
     {
         "topic" : "admin",
         "topicName": "MDO Admin",
-        "topicInit": "ADMIN",
+        "topicInit": "AD",
         "menu": [
             {
                 "name": "User Management",
