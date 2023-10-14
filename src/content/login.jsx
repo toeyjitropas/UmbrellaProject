@@ -5,7 +5,7 @@ export default function Login() {
     return (
         <div className="relative flex flex-col justify-center min-h-screen overflow-hidden">
             <div className="w-1/2 p-6 m-auto bg-white rounded-md shadow-md lg:max-w-xl">
-                <h1 className="text-3xl font-semibold text-center text-indigo-950">
+                <h1 className="lg:text-3xl md:text-lg font-semibold text-center text-indigo-950">
                 いらっしゃいませ! Middle Office 2.0
                 </h1>
                 <form className="mt-6">
