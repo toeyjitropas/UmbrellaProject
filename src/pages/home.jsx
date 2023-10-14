@@ -1,19 +1,30 @@
 import React from 'react';
 import Sidebar from './sidebar.jsx';
+import Content from './content.jsx';
+import Topbar from './topbar.jsx';
 
-function Home() {
-    const userRole = "admin"; // Example: fetch it from user context/state
+function Home({page, children, user }) {
 
-    return (
-        
-        <div>
-            {/* place side bar on left */}
-            <div className="flex h-100 justify-start overflow-auto">
-                <Sidebar userRole={userRole} />
+        return (
+          <div>
+            <div className="flex h-screen bg-gray-100">
+              <div className="w-1/6 bg-gray-800 text-white overflow-auto">
+                <Sidebar userRole={user.role} page={children} />
+              </div>
+              <div className="w-5/6">
+                <div className="bg-white">
+                    <div className="h-16">
+                        <Topbar children={user} />
+                    </div>
+                    <div className="h-full overflow-auto">
+                        <Content children={page} />
+                    </div>
+                </div>
+              </div>
             </div>
-            {/* <h1> Why you take so long </h1> */}
-        </div>
-    );
+          </div>
+        );
+    
     
 }
 

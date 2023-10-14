@@ -1,10 +1,24 @@
-import './App.css';
 import  Home  from './pages/home.jsx';
+import Dashboard from './content/dashboard.jsx';
+import Task from './content/task.jsx';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+
 
 function App() {
+
+  const usrJson = {"name": "Amigo Homie", "role": "admin", "initial": "AH"};
   return (
     <>
-      <Home />
+      {/* <Home page={<Dashboard /> } children={'Dashboard'} user={usrJson} /> */}
+      <Router>
+        <Routes>
+          <Route path='/umbrellaProject/' element={<Home page={<Dashboard /> } children={'Dashboard'} user={usrJson} />} />
+          <Route path="/umbrellaProject/dashboard" element={<Home page={<Dashboard /> } children={'Dashboard'} user={usrJson} />} />
+          <Route path="/umbrellaProject/task" element={<Home page={<Task /> } children={'Task'} user={usrJson} />} />
+        </Routes>
+      </Router>
     </>
   )
 }

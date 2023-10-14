@@ -3,12 +3,15 @@ import mainMenu from '../static/SidebarMenu';
 import { FaTachometerAlt,FaTasks,FaPlusSquare,FaBookMedical,FaSquareRootAlt,FaRev,FaRedoAlt,FaNetworkWired,FaCarAlt,FaBtc,FaDatabase } from 'react-icons/fa';
 import { FaArrowsSpin,FaCarOn } from 'react-icons/fa6';
 
-function Sidebar({ userRole }) {
+function Sidebar({ userRole, page }) {
   return (
-    <div className="w-72 h-screen bg-white shadow-md">
-        <div>
-            <FaCarOn />
-            <h1 className="text-xl font-semibold p-6 text-gray-950">SIT Middle Office</h1>
+    <div className="overflow-auto bg-white shadow-md">
+        <div className='h-16'>
+            <h1 className="text-xl font-semibold p-4 text-gray-950 align-middle">
+              
+            <FaCarOn className="inline-block mr-4 align-middle" />
+            <span> SIT Middle Office
+              </span></h1>
         </div>
       <ul>
         {mainMenu
@@ -20,11 +23,17 @@ function Sidebar({ userRole }) {
                 {item.menu
                     .filter(item => item.role.includes(userRole))
                     .map((menuItem) => (
-                        <li key={menuItem.name} className="p-4 hover:bg-gray-100 text-gray-800"> 
-                    {menuItem.icon && <menuItem.icon className="inline-block mr-4" />}
-                    {menuItem.name}
-                  </li>
-                ))}
+                      <a href={menuItem.link}>
+                        <li key={menuItem.name} className={`p-2 my-2 ml-2 mr-4 align-middle rounded-xl  ${
+                          menuItem.name === page
+                            ? 'bg-indigo-800 text-gray-50'
+                            : 'hover:bg-indigo-50 text-gray-800'
+                        }`}> 
+                          {menuItem.icon && <menuItem.icon className="inline-block mr-4" />}
+                          {menuItem.name}
+                        </li>
+                      </a>
+                    ))}
               </ul>
             </li>
           ))
