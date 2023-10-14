@@ -3,6 +3,7 @@ import Dashboard from './content/dashboard.jsx';
 import Task from './content/task.jsx';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './content/login.jsx';
 
 
 
@@ -15,6 +16,7 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Home page={<Dashboard /> } children={'Dashboard'} user={usrJson} />} />
+          <Route path='/login' element={<Login />} />
           <Route path="/dashboard" element={<Home page={<Dashboard /> } children={'Dashboard'} user={usrJson} />} />
           <Route path="/task" element={<Home page={<Task /> } children={'Task'} user={usrJson} />} />
         </Routes>
