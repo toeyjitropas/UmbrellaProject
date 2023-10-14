@@ -9,13 +9,13 @@ const mainMenu = [
         "topicInit": "",
         "menu" : [{
                     "name": "Dashboard",
-                    "link": "/UmbrellaProject/dashboard",
+                    "link": "/dashboard",
                     "icon": FaTachometerAlt,
                     "role": ["admin","actSenior","actJunior","pdSenior","pdJunior","uwSenior","uwJunior","mktSenior","mktJunior"]
                 },
                 {
                     "name": "Task",
-                    "link": "/UmbrellaProject/task",
+                    "link": "/task",
                     "icon": FaTasks,
                     "role": ["admin","actSenior","actJunior","pdSenior","pdJunior","uwSenior","uwJunior","mktSenior","mktJunior"]
                 }],

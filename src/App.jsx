@@ -14,9 +14,9 @@ function App() {
       {/* <Home page={<Dashboard /> } children={'Dashboard'} user={usrJson} /> */}
       <Router>
         <Routes>
-          <Route path='/umbrellaProject/' element={<Home page={<Dashboard /> } children={'Dashboard'} user={usrJson} />} />
-          <Route path="/umbrellaProject/dashboard" element={<Home page={<Dashboard /> } children={'Dashboard'} user={usrJson} />} />
-          <Route path="/umbrellaProject/task" element={<Home page={<Task /> } children={'Task'} user={usrJson} />} />
+          <Route path='/' element={<Home page={<Dashboard /> } children={'Dashboard'} user={usrJson} />} />
+          <Route path="/dashboard" element={<Home page={<Dashboard /> } children={'Dashboard'} user={usrJson} />} />
+          <Route path="/task" element={<Home page={<Task /> } children={'Task'} user={usrJson} />} />
         </Routes>
       </Router>
     </>
