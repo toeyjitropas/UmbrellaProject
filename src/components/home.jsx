@@ -31,7 +31,7 @@ function Home({page, children, user }) {
                     <div className="h-16">
                         <Topbar children={user} />
                     </div>
-                    <div className="h-full overflow-auto">
+                    <div className="h-full overflow-auto bg-gray-100">
                         <Content children={page} />
                     </div>
                 </div>

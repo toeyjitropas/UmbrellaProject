@@ -14,11 +14,11 @@ const mainMenu = [
                     "role": ["admin","actSenior","actJunior","pdSenior","pdJunior","uwSenior","uwJunior","mktSenior","mktJunior"]
                 },
                 {
-                    "name": "Task",
+                    "name": "Project Tracker",
                     "link": "/task",
                     "icon": FaTasks,
                     "role": ["admin","actSenior","actJunior","pdSenior","pdJunior","uwSenior","uwJunior","mktSenior","mktJunior"]
-                }],
+                },],
         "role": ["admin","actSenior","actJunior","pdSenior","pdJunior","uwSenior","uwJunior","mktSenior","mktJunior"]
             },
     {
